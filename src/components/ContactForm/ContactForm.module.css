@@ -7,22 +7,22 @@
 .formNumber {
   display: flex;
   flex-direction: column;
-  margin: 8px auto;
+  margin: 0.5rem auto;
   align-items: center;
   font-size: large;
   text-align: left;
-  padding: 8px 240px 8px 16px;
+  padding: 0.5rem 15rem 0.5rem 1rem;
 }
 
 .formBtn {
   margin-top: 1rem;
   margin-bottom: 2rem;
-  background-color: rgba(45, 73, 129, 0.8);
+  background-color: rgba(23, 26, 32, 0.8);
   border: none;
   border-radius: 6px;
   color: #fff;
   flex-grow: 1;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
   font-size: 15px;
   height: 36px;
   line-height: 20px;
@@ -35,6 +35,6 @@
 }
 
 .formBtn:hover {
-  background-color: rgba(45, 73, 129);
+  background-color: rgba(23, 26, 32, 1);
   cursor: pointer;
 }

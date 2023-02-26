@@ -29,7 +29,7 @@ export class App extends Component {
     const contactsLists = [...this.state.contacts];
 
     if (contactsLists.findIndex(contact => name === contact.name) !== -1) {
-      alert(`${name} is already in contacts!`);
+      alert(`${name} is already in contacts.`);
     } else {
       contactsLists.push({ name, id, number });
     }
@@ -49,8 +49,10 @@ export class App extends Component {
         .toLowerCase()
         .includes(this.state.filter.toLowerCase());
     });
+
     return filterContactsList;
   };
+
   render() {
     const { filter } = this.state;
 
@@ -63,12 +65,12 @@ export class App extends Component {
           justifyContent: 'center',
           alignItems: 'center',
           fontSize: 20,
-          color: '#000',
+          color: '#010101',
         }}
       >
         <h1>Phonebook</h1>
         <ContactForm handleSubmit={this.handleSubmit} />
-        <h2>Contacts</h2>
+        <h2> Contacts</h2>
         <Filter filter={filter} handleChange={this.handleChange} />
         <ContactList
           contacts={this.getFilteredContacts()}
